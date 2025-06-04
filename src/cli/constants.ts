@@ -20,6 +20,7 @@ export const VALID_DIALECTS = [
   'mssql',
   'libsql',
   'bun-sqlite',
+  'kysely-bun-psql',
   'kysely-bun-sqlite',
   'worker-bun-sqlite',
 ];
