@@ -54,6 +54,8 @@
     "nvarchar",
     "objoid",
     "plpgsql",
+    "psql",
+    "ratiu",
     "regclass",
     "regnamespace",
     "relkind",

@@ -288,7 +288,7 @@ describe(Cli.name, () => {
     assert({ defaultSchemas: 'public' }, 'Expected array, received string');
     assert(
       { dialect: 'sqlite3' },
-      "Invalid enum value. Expected 'bun-sqlite' | 'kysely-bun-sqlite' | 'libsql' | 'mssql' | 'mysql' | 'postgres' | 'sqlite' | 'worker-bun-sqlite', received 'sqlite3'",
+      "Invalid enum value. Expected 'bun-sqlite' | 'kysely-bun-sqlite' | 'libsql' | 'mssql' | 'mysql' | 'postgres' | 'sqlite' | 'kysely-bun-psql' | 'worker-bun-sqlite', received 'sqlite3'",
     );
     assert({ domains: 'true' }, 'Expected boolean, received string');
     assert({ envFile: null }, 'Expected string, received null');
