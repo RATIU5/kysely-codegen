@@ -57,6 +57,7 @@ export const dialectNameSchema = z.enum([
   'mysql',
   'postgres',
   'sqlite',
+  'kysely-bun-psql',
   'worker-bun-sqlite',
 ]);
 

@@ -9,6 +9,7 @@ import {
   type PostgresDialectOptions,
   PostgresDialect,
 } from './dialects/postgres/postgres-dialect';
+import { PostgresBunDialect } from './dialects/kysely-bun-psql/postgres-dialect';
 import { SqliteDialect } from './dialects/sqlite/sqlite-dialect';
 import { WorkerBunSqliteDialect } from './dialects/worker-bun-sqlite/worker-bun-sqlite-dialect';
 
@@ -34,6 +35,8 @@ export const getDialect = (
       return new MysqlDialect();
     case 'postgres':
       return new PostgresDialect(options);
+    case 'kysely-bun-psql':
+      return new PostgresBunDialect(options);
     case 'bun-sqlite': // Legacy.
     case 'worker-bun-sqlite':
       return new WorkerBunSqliteDialect();

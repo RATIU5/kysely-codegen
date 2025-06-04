@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@ratiu5/kysely-bun-psql':
+        specifier: '>=0.0.3 <1.0.0'
+        version: 0.0.3(kysely@0.28.2)
       '@tediousjs/connection-string':
         specifier: '>=0.5.0 <0.6.0'
         version: 0.5.0
@@ -955,6 +958,11 @@ packages:
   '@pkgr/core@0.1.1':
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
+
+  '@ratiu5/kysely-bun-psql@0.0.3':
+    resolution: {integrity: sha512-vBAEZgFhjcwYZRzBpEEa1R7/s7iTIrAfinNJ+xBT1o5ATF4OjCIjj+CXbnYOWbk4Sc1gxPtDpazAzXLR31XerA==}
+    peerDependencies:
+      kysely: '>= 0.24.0 < 1'
 
   '@robinblomberg/eslint-config-prettier@0.1.4':
     resolution: {integrity: sha512-gAGbmxj3fJFS2VQWfhyNCQ/GS96BrEDak+Axh1usVLkibVh7fTPIulR3RkttQP84BT8EP0OF+Uast4pqpDTKzg==}
@@ -4677,6 +4685,10 @@ snapshots:
       fastq: 1.17.1
 
   '@pkgr/core@0.1.1': {}
+
+  '@ratiu5/kysely-bun-psql@0.0.3(kysely@0.28.2)':
+    dependencies:
+      kysely: 0.28.2
 
   '@robinblomberg/eslint-config-prettier@0.1.4': {}
 

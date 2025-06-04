@@ -14,12 +14,15 @@
 ## Installation
 
 ```sh
-npm install --save-dev kysely-codegen
+npm install --save-dev @ratiu5/kysely-codegen
 ```
 
 You will also need to install Kysely with your driver of choice:
 
 ```sh
+# Bun PostgreSQL
+bun add kysely @ratiu5/kysely-bun-psql
+
 # PostgreSQL
 npm install kysely pg
 
