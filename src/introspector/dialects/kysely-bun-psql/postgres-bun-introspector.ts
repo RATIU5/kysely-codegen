@@ -18,7 +18,7 @@ export type PostgresBunDomainInspector = {
   typeSchema: string;
 };
 
-export type TableReference = {
+export type BunTableReference = {
   schema?: string;
   name: string;
 };
@@ -53,7 +53,7 @@ export class PostgresBunIntrospector extends Introspector<PostgresBunDB> {
   }: {
     domains: PostgresBunDomainInspector[];
     enums: EnumCollection;
-    partitions: TableReference[];
+    partitions: BunTableReference[];
     tables: KyselyTableMetadata[];
   }) {
     const tables = rawTables
@@ -183,7 +183,7 @@ export class PostgresBunIntrospector extends Introspector<PostgresBunDB> {
   }
 
   async introspectPartitions(db: Kysely<PostgresBunDB>) {
-    const result = await sql<TableReference>`
+    const result = await sql<BunTableReference>`
       select pg_namespace.nspname as schema, pg_class.relname as name
       from pg_inherits
       join pg_class on pg_inherits.inhrelid = pg_class.oid

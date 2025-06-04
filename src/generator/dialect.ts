@@ -9,7 +9,7 @@ import {
   type PostgresDialectOptions,
   PostgresDialect,
 } from './dialects/postgres/postgres-dialect';
-import { PostgresBunDialect } from './dialects/kysely-bun-psql/postgres-dialect';
+import { PostgresBunDialect } from './dialects/kysely-bun-psql/postgres-bun-dialect';
 import { SqliteDialect } from './dialects/sqlite/sqlite-dialect';
 import { WorkerBunSqliteDialect } from './dialects/worker-bun-sqlite/worker-bun-sqlite-dialect';
 
